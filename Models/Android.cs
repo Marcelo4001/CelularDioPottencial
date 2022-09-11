@@ -1,13 +1,15 @@
 namespace DesafioPOO.Models
 {
     // TODO: Herdar da classe "Smartphone"
-    public class Nokia : Smartphone
+    public class Android : Smartphone
     {
-        public string Sistema = "Nokia";
-        public string MeuNumero { get; set;}
-        public Nokia(string imei, int memoria, string modelo, string numero) : base(imei, memoria, modelo, numero)
+       public string Sistema = "Android";
+       public string MeuNumero { get; set;}
+       //public string Sistema { get; set;}
+        public Android(string imei, int memoria, string modelo, string numero) : base(imei, memoria, modelo, numero)
         {
             MeuNumero = numero;
+            //Sistema = sistema;
         }
         // TODO: Sobrescrever o método "InstalarAplicativo"
         public override void InstalarAplicativo(string nomeApp, Dictionary<string, string> apps)
